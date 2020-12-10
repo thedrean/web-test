@@ -29,4 +29,17 @@
     }
   }
 }
+#reservation-form, #inventory-form {
+  input, select {
+    margin: 15px;
+    text-align: left;
+  }
+  .error{
+    color: red;
+  }
+  table {
+    margin-left:auto; 
+    margin-right:auto;
+  }
+}
 </style>

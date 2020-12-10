@@ -10,6 +10,8 @@ RUN yarn add global pg
 
 RUN yarn
 
+RUN npm install
+
 COPY ./api /app
 
 EXPOSE 8080

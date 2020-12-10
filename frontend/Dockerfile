@@ -6,8 +6,10 @@ WORKDIR /app
 COPY ./frontend /app
 
 RUN yarn add global @vue/cli
+RUN yarn install
 RUN yarn
 
+RUN npm install
 
 EXPOSE 8080
 

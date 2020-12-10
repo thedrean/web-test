@@ -3,6 +3,7 @@ import morgan from 'morgan'
 import { Server } from '@overnightjs/core'
 import cors from 'cors'
 import * as controllers from './controllers/index'
+import * as models from './models/index'
 import Logger from './logger'
 
 export class RouterServer extends Server {
@@ -38,5 +39,6 @@ export class RouterServer extends Server {
     this.app.listen(port, () => {
       Logger.info(`Server listening on port: ${port}`)
     })
+    
   }
 }

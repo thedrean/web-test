@@ -5,6 +5,7 @@ import { Request, Response } from 'express'
 export class TestController {
   @Get('')
   private async get(req: Request, res: Response) {
+    console.log('test')
     return res.sendStatus(200)
   }
 }
